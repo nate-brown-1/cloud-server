@@ -66,7 +66,10 @@ Task 1: Use EB GUI
 _ Zip the repo: must zip the individual files together, can't zip the parent directory
 - Upload the zip file in EB console, Node 18, build
 - Deployment succeeds with health warning: all requests failing with code 5xx
-- Make a landing page index.html so there is something to see
 
+GUI Deployment link
+
+[http://expressarchive-env.eba-gpmqvcyp.us-west-2.elasticbeanstalk.com/](http://expressarchive-env.eba-gpmqvcyp.us-west-2.elasticbeanstalk.com/)
 
 Task 2: Use EB CLI
+

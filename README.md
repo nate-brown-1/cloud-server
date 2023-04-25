@@ -71,5 +71,7 @@ GUI Deployment link
 
 [http://expressarchive-env.eba-gpmqvcyp.us-west-2.elasticbeanstalk.com/](http://expressarchive-env.eba-gpmqvcyp.us-west-2.elasticbeanstalk.com/)
 
+NOTE: This deployment gets "severe" health rating with 100% of the HTTP requests failing
+
 Task 2: Use EB CLI
 

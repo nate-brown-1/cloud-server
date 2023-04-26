@@ -70,11 +70,9 @@ _ Zip the repo: must zip the individual files together, can't zip the parent dir
 - Get CLI deployment to work in Node 16
 - Zip it and build a new application and environment using the GUI
 
-GUI Deployment link
+GUI Deployment link (working!)
 
 [http://nates-basic-express-server-env.eba-wgxf6yvs.us-west-2.elasticbeanstalk.com/](http://nates-basic-express-server-env.eba-wgxf6yvs.us-west-2.elasticbeanstalk.com/)
-
-NOTE: This deployment gets "severe" health rating with 100% of the HTTP requests failing
 
 Task 2: Use EB CLI
 
@@ -90,6 +88,6 @@ Task 2: Use EB CLI
 - Successfully build the site with Node 16.19.1
 - Profit?
 
-CLI Deployment Link
+CLI Deployment Link (working!)
 
 [http://cli-nates-basic-express-server-dev.us-west-2.elasticbeanstalk.com/](http://cli-nates-basic-express-server-dev.us-west-2.elasticbeanstalk.com/)

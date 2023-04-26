@@ -66,12 +66,30 @@ Task 1: Use EB GUI
 _ Zip the repo: must zip the individual files together, can't zip the parent directory
 - Upload the zip file in EB console, Node 18, build
 - Deployment succeeds with health warning: all requests failing with code 5xx
+- Rebuild the deployment a bunch of times in the CLI, see below
+- Get CLI deployment to work in Node 16
+- Zip it and build a new application and environment using the GUI
 
 GUI Deployment link
 
-[http://expressarchive-env.eba-gpmqvcyp.us-west-2.elasticbeanstalk.com/](http://expressarchive-env.eba-gpmqvcyp.us-west-2.elasticbeanstalk.com/)
+[http://nates-basic-express-server-env.eba-wgxf6yvs.us-west-2.elasticbeanstalk.com/](http://nates-basic-express-server-env.eba-wgxf6yvs.us-west-2.elasticbeanstalk.com/)
 
 NOTE: This deployment gets "severe" health rating with 100% of the HTTP requests failing
 
 Task 2: Use EB CLI
 
+- Set up user "cli-user"
+  - Download user credentials (password) as CSV file
+  - Download user access keys as CSV file
+- Run "eb init" to setup environment defaults for build
+- Have the build fail at least 20 times
+- Figure out that Amazon Linux 2 instance is using a version of glibc that was incompatible with the version of Node.js that I built the apps with
+- Figure out that this is a known issue and Amazon Linux 2022/2023 is supposed to correct it, but isn't available to me
+- Install nvm and multiple versions of Node.js
+- Figure out that EB is not compatible with Node 16.20.0 (the last release of Node 16 and the LTS version)
+- Successfully build the site with Node 16.19.1
+- Profit?
+
+CLI Deployment Link
+
+[http://cli-nates-basic-express-server-dev.us-west-2.elasticbeanstalk.com/](http://cli-nates-basic-express-server-dev.us-west-2.elasticbeanstalk.com/)
